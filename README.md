@@ -10,11 +10,11 @@
 
 **OBJETIVO ALCANZADO**
 
-El objetivo alcanzado de esta practica fue interpretar mediante una interfaz grafica el manejo de archivos, creado, renombrando
+El objetivo alcanzado de esta practica fue interpretar mediante una interfaz grafica el manejo de archivos, creado, renombrando y 
 
-y eliminando archivos a la vez poderlos manipular y obtener informacion como en la ruta en la que se encuentra, la modificacion que tubo 
+eliminando archivos a la vez poderlos manipular y obtener informacion como en la ruta en la que se encuentra, la modificacion que tubo y 
 
-y el tamaño de dicho directorio, archivo y archivos ocultos.
+el tamaño de dicho directorio, archivo y archivos ocultos.
 
 **ACTIVIDADES DESARROLLADAS**
 
