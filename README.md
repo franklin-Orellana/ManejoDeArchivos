@@ -11,9 +11,7 @@
 **OBJETIVO ALCANZADO**
 
 El objetivo alcanzado de esta practica fue interpretar mediante una interfaz grafica el manejo de archivos, creado, renombrando y 
-
 eliminando archivos a la vez poderlos manipular y obtener informacion como en la ruta en la que se encuentra, la modificacion que tubo y 
-
 el tamaño de dicho directorio, archivo y archivos ocultos.
 
 **ACTIVIDADES DESARROLLADAS**
@@ -23,7 +21,6 @@ el tamaño de dicho directorio, archivo y archivos ocultos.
 ![1](https://user-images.githubusercontent.com/49034691/59171762-33698d00-8b0a-11e9-89f8-47e514104ac0.PNG)
 
 **2.-SINCRONIZAR EL REPOSITORIO CREADO CON UN PROYECTO EN NETBEANS Y REAIZA UN COMIT Y PUSH POR CADA REQUERIMIENTO PEDIDO EN LA GUIA DE
-
 PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN GITHUB).**
 
   - Se realizo 5 commits, a continuacion se mostraran mediante una imagen.
