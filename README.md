@@ -98,33 +98,33 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 
   - De igual manera se trabajo con el renombrar nos pedira que señalemos el archivo que queramos renombrar y nos saldra una pantalla
     que ingresemos el nuevo nombre una vez modificado nos devolvera una pantalla avisandonos que el archivo se ah modificado.
+
+![13](https://user-images.githubusercontent.com/49034691/59174293-5e59de00-8b16-11e9-9b64-7751884eb761.PNG)
+
+![14](https://user-images.githubusercontent.com/49034691/59174294-5ef27480-8b16-11e9-8652-1114e51eca2a.PNG)
   
 ![15](https://user-images.githubusercontent.com/49034691/59174290-5e59de00-8b16-11e9-8848-31e8bb81d944.PNG)
 
 ![16](https://user-images.githubusercontent.com/49034691/59174292-5e59de00-8b16-11e9-900b-913c09d096e9.PNG)
 
-![13](https://user-images.githubusercontent.com/49034691/59174293-5e59de00-8b16-11e9-9b64-7751884eb761.PNG)
-
-![14](https://user-images.githubusercontent.com/49034691/59174294-5ef27480-8b16-11e9-8652-1114e51eca2a.PNG)
-
   - Y por ultimo el eliminar archivos nos pedira que señalemos el archivo que deseemos eliminar y nos devolvera un mensaje
     diciendonos que el archivo ah sido eliminado y se quetara automaticamente del Jlist sin tener volver a listar los JList.
   
-![18](https://user-images.githubusercontent.com/49034691/59174402-d7f1cc00-8b16-11e9-8467-3bee5f990730.PNG)
-
 ![17](https://user-images.githubusercontent.com/49034691/59174403-d7f1cc00-8b16-11e9-8975-fbb8fe321c5d.PNG)
+
+![18](https://user-images.githubusercontent.com/49034691/59174402-d7f1cc00-8b16-11e9-8467-3bee5f990730.PNG)
 
   - Para poder ingresar ah cada carpeta se implemento un evento al JList llamado mouseClicked el cual nos ayudara a ingresar a 
     cualquier carpeta y nos dejara manipularla a nuestro gusto cabe recalcar que al momento de querer eliminar una carpeta
     que este dentro de otra carpeta primero debemos asegurarnos que no tengo ningun contenido dentro ya que no nos dejara elimanarla.
-  
-![21](https://user-images.githubusercontent.com/49034691/59174635-b6451480-8b17-11e9-91f2-0ce18d842df7.PNG)
-
-![22](https://user-images.githubusercontent.com/49034691/59174636-b6ddab00-8b17-11e9-9a6c-8107129392ae.PNG)
 
 ![19](https://user-images.githubusercontent.com/49034691/59174638-b6ddab00-8b17-11e9-92d5-dded7d390971.PNG)
 
 ![20](https://user-images.githubusercontent.com/49034691/59174639-b6ddab00-8b17-11e9-940f-b705ea06eaf1.PNG)
+
+![21](https://user-images.githubusercontent.com/49034691/59174635-b6451480-8b17-11e9-91f2-0ce18d842df7.PNG)
+
+![22](https://user-images.githubusercontent.com/49034691/59174636-b6ddab00-8b17-11e9-9a6c-8107129392ae.PNG)
 
   - Se creo un boton regresar el cual nos ira regresando a la ruta o carpeta que deseemos.
   
