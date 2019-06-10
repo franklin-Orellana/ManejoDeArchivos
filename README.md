@@ -85,9 +85,7 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 ![8](https://user-images.githubusercontent.com/49034691/59173671-a7f4f980-8b13-11e9-9e76-8f56cf04eac7.PNG)
 
   -  En el siguiente codigo crearemos un nuevo archivo asi designando la ruta en la que deseemos que se encuentre, al momento
-  
   de crear un archivo nos saldra una pantalla indicandonos que ingresemos el nombre del archivo y finalmente nos devolvera un mensaje
-  
   diciendonos que el archivo se ah creado y nos mostrara automaticamente en la lista.
   
 ![9](https://user-images.githubusercontent.com/49034691/59173932-c8718380-8b14-11e9-8dc3-fa4457174eef.PNG)
@@ -99,8 +97,7 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 ![12](https://user-images.githubusercontent.com/49034691/59174086-70874c80-8b15-11e9-84a7-8d4ecc1e5bb5.PNG)
 
   - De igual manera se trabajo con el renombrar nos pedira que señalemos el archivo que queramos renombrar y nos saldra una pantalla
-  
-  que ingresemos el nuevo nombre una vez modificado nos devolvera una pantalla avisandonos que el archivo se ah modificado.
+    que ingresemos el nuevo nombre una vez modificado nos devolvera una pantalla avisandonos que el archivo se ah modificado.
   
 ![15](https://user-images.githubusercontent.com/49034691/59174290-5e59de00-8b16-11e9-8848-31e8bb81d944.PNG)
 
@@ -111,18 +108,15 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 ![14](https://user-images.githubusercontent.com/49034691/59174294-5ef27480-8b16-11e9-8652-1114e51eca2a.PNG)
 
   - Y por ultimo el eliminar archivos nos pedira que señalemos el archivo que deseemos eliminar y nos devolvera un mensaje
-  
-  diciendonos que el archivo ah sido eliminado y se quetara automaticamente del Jlist sin tener volver a listar los JList.
+    diciendonos que el archivo ah sido eliminado y se quetara automaticamente del Jlist sin tener volver a listar los JList.
   
 ![18](https://user-images.githubusercontent.com/49034691/59174402-d7f1cc00-8b16-11e9-8467-3bee5f990730.PNG)
 
 ![17](https://user-images.githubusercontent.com/49034691/59174403-d7f1cc00-8b16-11e9-8975-fbb8fe321c5d.PNG)
 
   - Para poder ingresar ah cada carpeta se implemento un evento al JList llamado mouseClicked el cual nos ayudara a ingresar a 
-  
-  cualquier carpeta y nos dejara manipularla a nuestro gusto cabe recalcar que al momento de querer eliminar una carpeta
-  
-  que este dentro de otra carpeta primero debemos asegurarnos que no tengo ningun contenido dentro ya que no nos dejara elimanarla.
+    cualquier carpeta y nos dejara manipularla a nuestro gusto cabe recalcar que al momento de querer eliminar una carpeta
+    que este dentro de otra carpeta primero debemos asegurarnos que no tengo ningun contenido dentro ya que no nos dejara elimanarla.
   
 ![21](https://user-images.githubusercontent.com/49034691/59174635-b6451480-8b17-11e9-91f2-0ce18d842df7.PNG)
 
@@ -143,15 +137,12 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 **CONCLUSIONES**
 
 Se puede decir que el manejo de directores nos ayuda a controlar y manipular archivos a nuestro gusto mediante rutas,
-
 a la vez se supo interpretar el uso del File en java y a la vez la creacion de carpetas, archivos y renombrar a nuestro
-
 gusto, cabe recalcar que al momento de eliminar archivos o carpetas no se podran recuperar de ninguna manera.
 
 **RECOMENDACIONES**
 
 Trabajar con directores de prueba ya que al momento de realizar pruebas del eliminar no se podra recuperar la informacion
-
 que se elimino en ese momento.
 
 **GITHUB**
