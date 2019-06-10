@@ -78,7 +78,6 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 **7.- INDICACIONES DEL CODIGO**
 
   - En el siguiente codigo se indicara el momento que se ingresa la ruta en la caja de texto nos mostrara toda la informacion 
-  
   en los JList y asi poder hacer las modificaciones necesarias.
   
 ![7](https://user-images.githubusercontent.com/49034691/59173538-e9d17000-8b12-11e9-9ee1-b4980a936fb8.PNG)
