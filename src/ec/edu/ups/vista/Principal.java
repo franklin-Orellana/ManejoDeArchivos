@@ -126,6 +126,8 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("RUTA");
 
+        txtRuta.setText("C:\\Users\\Fernanda\\Documents");
+        txtRuta.setEnabled(false);
         txtRuta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRutaActionPerformed(evt);
@@ -449,7 +451,6 @@ public class Principal extends javax.swing.JFrame {
                 }
             });
         }
-
     }//GEN-LAST:event_lstDirectoriosValueChanged
 
     private void lstArchivosValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstArchivosValueChanged
@@ -501,7 +502,9 @@ public class Principal extends javax.swing.JFrame {
             } catch (IOException ex) {
                 System.err.println("Error: archivo no pudo ser creado");
             }
+            JOptionPane.showMessageDialog(this, "ARCHIVO CREADO");
         }
+        IngresoListas();
 
 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
@@ -526,6 +529,7 @@ public class Principal extends javax.swing.JFrame {
         } else {
             archivo.renameTo(archivoNuevo);
         }
+        IngresoListas();
 
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
@@ -537,6 +541,7 @@ public class Principal extends javax.swing.JFrame {
         File carpetaNuevo = new File(ruta);
         if (!carpetaNuevo.exists()) {
             carpetaNuevo.mkdir();
+            JOptionPane.showMessageDialog(this, "CARPETA CREADA");
         }
         IngresoListas();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
@@ -553,14 +558,15 @@ public class Principal extends javax.swing.JFrame {
         }
         String rutaArchivoSeleccionada = txtRuta.getText().trim() + "/" + directorioSeleccionado;
         File archivo = new File(rutaArchivoSeleccionada);
-        String nombreNuevoArchivo = JOptionPane.showInputDialog("Ingrese nuevo nombre del archivo");
+        String nombreNuevoArchivo = JOptionPane.showInputDialog("INGRESE NOMBRE NUEVO DEL ARCHIVO");
         String rutaNuevoArchivo = txtRuta.getText().trim() + "/" + nombreNuevoArchivo;
         File archivoNuevo = new File(rutaNuevoArchivo);
         if (archivoNuevo.exists()) {
-            JOptionPane.showMessageDialog(this, "el nombre ya existe con ese nmbre");
+            JOptionPane.showMessageDialog(this, "EL NOMBRE YA EXISTE");
         } else {
             archivo.renameTo(archivoNuevo);
         }
+        IngresoListas();
 
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
@@ -581,18 +587,17 @@ public class Principal extends javax.swing.JFrame {
             archivoSeleccionado = (String) lstOcultos.getSelectedValue();
         } else {
             isValid = false;
-            JOptionPane.showMessageDialog(this, "Selecciones el archivo a eliminar");
+            JOptionPane.showMessageDialog(this, "SELECCIONE ARCHIVO QUE DESEA ELIMINAR");
         }
         if (isValid == true) {
 
             String rutaArchivoSeleccionada = txtRuta.getText().trim() + "/" + archivoSeleccionado;
             File archivo = new File(rutaArchivoSeleccionada);
             archivo.delete();
-            //IngresoListas(txtRuta.getText().trim());
-//        IngresoListas();
+            JOptionPane.showMessageDialog(this, "ARCHIVO ELIMINADO");
         }
+        IngresoListas();
 
-        //
     }//GEN-LAST:event_jMenuItem5ActionPerformed
     private void lstDirectoriosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lstDirectoriosMouseClicked
         // TODO add your handling code here:          
@@ -600,27 +605,26 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-        String archivoSeleccionado = null;
+        String carpetaSeleccionado = null;
         boolean isValid = true;
         if (!lstArchivos.isSelectionEmpty()) {
-            archivoSeleccionado = (String) lstArchivos.getSelectedValue();
+            carpetaSeleccionado = (String) lstArchivos.getSelectedValue();
         } else if (!lstDirectorios.isSelectionEmpty()) {
-            archivoSeleccionado = (String) lstDirectorios.getSelectedValue();
+            carpetaSeleccionado = (String) lstDirectorios.getSelectedValue();
         } else if (!lstOcultos.isSelectionEmpty()) {
-            archivoSeleccionado = (String) lstOcultos.getSelectedValue();
+            carpetaSeleccionado = (String) lstOcultos.getSelectedValue();
         } else {
             isValid = false;
             JOptionPane.showMessageDialog(this, "Selecciones el archivo a eliminar");
         }
         if (isValid == true) {
 
-            String rutaArchivoSeleccionada = txtRuta.getText().trim() + "/" + archivoSeleccionado;
+            String rutaArchivoSeleccionada = txtRuta.getText().trim() + "/" + carpetaSeleccionado;
             File archivo = new File(rutaArchivoSeleccionada);
             archivo.delete();
-            //IngresoListas(txtRuta.getText().trim());
-            //IngresoListas();
+            JOptionPane.showMessageDialog(this, "CARPETA ELIMINADA");//
         }
-
+        IngresoListas();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
