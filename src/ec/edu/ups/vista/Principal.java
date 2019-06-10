@@ -1,6 +1,5 @@
 package ec.edu.ups.vista;
 
-
 import java.io.File;
 
 /*
@@ -30,7 +29,6 @@ public class Principal extends javax.swing.JFrame {
     private String ruta;
     private String anterior;
     private String atras;
-    
 
     public Principal() {
         initComponents();
@@ -420,56 +418,56 @@ public class Principal extends javax.swing.JFrame {
 
     private void lstDirectoriosValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstDirectoriosValueChanged
         // TODO add your handling code here:
-        if(!lstDirectorios.isSelectionEmpty()){
-        String seleccion = lstDirectorios.getSelectedValue().toString();
-        String rutaCompleta = ruta + "\\" + seleccion;
-        lblRuta.setText(rutaCompleta);
-        File fichero = new File(rutaCompleta);
-        long modificacion = fichero.lastModified();
-        String pattern = "yyyy-MM-dd hh:mm aa";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        if (!lstDirectorios.isSelectionEmpty()) {
+            String seleccion = lstDirectorios.getSelectedValue().toString();
+            String rutaCompleta = ruta + "\\" + seleccion;
+            lblRuta.setText(rutaCompleta);
+            File fichero = new File(rutaCompleta);
+            long modificacion = fichero.lastModified();
+            String pattern = "yyyy-MM-dd hh:mm aa";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
-        Date fechaModificacion = new Date(modificacion);
+            Date fechaModificacion = new Date(modificacion);
 
-        lblModificacion.setText(simpleDateFormat.format(fechaModificacion));
-        long length = tamañoDirectorio(fichero);
-        lblTamaño.setText(Math.round(Math.ceil(length / 1024.0)) + " Kb");
+            lblModificacion.setText(simpleDateFormat.format(fechaModificacion));
+            long length = tamañoDirectorio(fichero);
+            lblTamaño.setText(Math.round(Math.ceil(length / 1024.0)) + " Kb");
 
-        lstDirectorios.addMouseListener(new java.awt.event.MouseAdapter() {
+            lstDirectorios.addMouseListener(new java.awt.event.MouseAdapter() {
 
-            public void mouseClicked(java.awt.event.MouseEvent e) {
-                if (e.getClickCount() == 2) {
-                    String rut = txtRuta.getText();
-                    if (!lstDirectorios.isSelectionEmpty()) {
-                        String selec = lstDirectorios.getSelectedValue().toString();
-                        anterior = selec;
-                        String rutfin = rut + "\\" + selec;
-                        txtRuta.setText(rutfin);
-                        IngresoListas();
+                public void mouseClicked(java.awt.event.MouseEvent e) {
+                    if (e.getClickCount() == 2) {
+                        String rut = txtRuta.getText();
+                        if (!lstDirectorios.isSelectionEmpty()) {
+                            String selec = lstDirectorios.getSelectedValue().toString();
+                            anterior = selec;
+                            String rutfin = rut + "\\" + selec;
+                            txtRuta.setText(rutfin);
+                            IngresoListas();
+                        }
                     }
                 }
-            }
-        });
+            });
         }
 
     }//GEN-LAST:event_lstDirectoriosValueChanged
 
     private void lstArchivosValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstArchivosValueChanged
         // TODO add your handling code here:
-        if(!lstArchivos.isSelectionEmpty()){
-        String seleccion = lstArchivos.getSelectedValue().toString();
-        String rutaCompleta = ruta + "\\" + seleccion;
-        lblRuta.setText(rutaCompleta);
-        File fichero = new File(rutaCompleta);
-        long modificacion = fichero.lastModified();
-        String pattern = "yyyy-MM-dd hh:mm aa";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        if (!lstArchivos.isSelectionEmpty()) {
+            String seleccion = lstArchivos.getSelectedValue().toString();
+            String rutaCompleta = ruta + "\\" + seleccion;
+            lblRuta.setText(rutaCompleta);
+            File fichero = new File(rutaCompleta);
+            long modificacion = fichero.lastModified();
+            String pattern = "yyyy-MM-dd hh:mm aa";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
-        Date fechaModificacion = new Date(modificacion);
+            Date fechaModificacion = new Date(modificacion);
 
-        lblModificacion.setText(simpleDateFormat.format(fechaModificacion));
+            lblModificacion.setText(simpleDateFormat.format(fechaModificacion));
 
-        lblTamaño.setText(Math.round(Math.ceil(fichero.length() / 1024.0)) + " Kb");
+            lblTamaño.setText(Math.round(Math.ceil(fichero.length() / 1024.0)) + " Kb");
         }
     }//GEN-LAST:event_lstArchivosValueChanged
 
@@ -492,7 +490,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-        
+
         String nombreArchivo = JOptionPane.showInputDialog("Ingrese el nombre del archivo:");
         String ruta = txtRuta.getText().trim() + "\\" + nombreArchivo;
 
@@ -538,8 +536,6 @@ public class Principal extends javax.swing.JFrame {
 
         File carpetaNuevo = new File(ruta);
         if (!carpetaNuevo.exists()) {
-            JOptionPane.showMessageDialog(this, "la carpeta ya existe");
-        } else {
             carpetaNuevo.mkdir();
         }
         IngresoListas();
@@ -631,13 +627,13 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         String regresar = txtRuta.getText();
         char r;
-        String dato ="";
-        for(int i=regresar.length()-1;i>0;i--){
-            r=regresar.charAt(i);
-            dato = r+dato;
-            if(r=='\\'){
+        String dato = "";
+        for (int i = regresar.length() - 1; i > 0; i--) {
+            r = regresar.charAt(i);
+            dato = r + dato;
+            if (r == '\\') {
                 atras = regresar.replace(dato, "");
-                i=0;
+                i = 0;
             }
         }
         txtRuta.setText(atras);
