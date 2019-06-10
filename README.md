@@ -138,11 +138,32 @@ PRACTICA(INCLUIR MENSAJES QUE IDENTIFIQUE CLARAMENTE LOS COMMITS REALIZADOS EN G
 
   - Se creo un boton regresar el cual nos ira regresando a la ruta o carpeta que deseemos.
   
+![23](https://user-images.githubusercontent.com/49034691/59174721-20f65000-8b18-11e9-95f9-0bb8ef37d357.PNG)
+
 ![24](https://user-images.githubusercontent.com/49034691/59174719-205db980-8b18-11e9-8e7d-16c04ffc7591.PNG)
   
 ![25](https://user-images.githubusercontent.com/49034691/59174720-205db980-8b18-11e9-914b-7dd4ec87efd8.PNG)
 
-![23](https://user-images.githubusercontent.com/49034691/59174721-20f65000-8b18-11e9-95f9-0bb8ef37d357.PNG)
+**CONCLUSIONES**
+
+Se puede decir que el manejo de directores nos ayuda a controlar y manipular archivos a nuestro gusto mediante rutas,
+
+a la vez se supo interpretar el uso del File en java y a la vez la creacion de carpetas, archivos y renombrar a nuestro
+
+gusto, cabe recalcar que al momento de eliminar archivos o carpetas no se podran recuperar de ninguna manera.
+
+**RECOMENDACIONES**
+
+Trabajar con directores de prueba ya que al momento de realizar pruebas del eliminar no se podra recuperar la informacion
+
+que se elimino en ese momento.
+
+**GITHUB**
+
+  - Usuario: franklin-Orellana
+  
+  -Repositorio: https://github.com/franklin-Orellana/ManejoDeArchivos
+
 
 
 
